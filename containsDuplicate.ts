@@ -1,12 +1,12 @@
 // https://leetcode.com/problems/contains-duplicate/description/
 
 function containsDuplicate(nums: number[]): boolean {
-   const numsMap = new Map()
+   const numsSet = new Set<number>()
    for(const elem of nums){
-    if(numsMap.get(elem)){
+    if(numsSet.has(elem)){
         return true
     }
-    numsMap.set(elem, true)
+    numsSet.add(elem)
    }
    return false
 };
