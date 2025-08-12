@@ -6,7 +6,7 @@ function containsDuplicate(nums: number[]): boolean {
     if(numsMap.get(elem)){
         return true
     }
-    numsMap.set(elem, 1)
+    numsMap.set(elem, true)
    }
    return false
 };
